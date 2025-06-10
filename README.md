@@ -8,6 +8,7 @@ Dependendo do setor que queira ajustar, utilize a tabela abaixo para configurar 
 | Setor     | Ajustar para |
 | -------------    | ------------- |
 | Captação Iguape  | 7 minutos `depois`|
+| Captação do Engenho  | 1 minutos `depois`|
 | ETA Centro       | 20 minutos `antes`|
 | ETA Distrito     | 10 minutos `antes`|
 | ETA Pontal     | Não funciona|
