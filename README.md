@@ -18,9 +18,13 @@ Dependendo do setor que queira ajustar, utilize a tabela abaixo para configurar 
 | Booster Mambape  | 8 minutos `antes`|
 | Booster Pontal  | 19 minutos `depois`|
 
-## Parâmetros padrão
+## Abastecimentos
 
-### Booster Amparo Intermediário
+
+
+
+
+### Booster Amparo Intermediário (AUTAG)
 | Parâmetro     | Valor |
 | -------------    | ------------- |
 | Início horário de ponta  | 12:00 |
@@ -50,6 +54,34 @@ Dependendo do setor que queira ajustar, utilize a tabela abaixo para configurar 
 | Liga máx. montante  | 20,0 mca|
 | Desliga mín. montante  | 4,0 mca|
 
+Pontos relacionados:
+- [49948360 - RUA RENOVAÇÃO 53](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBG4WAHeku9slPteHB1pGu94UrI0UrI=)
+  
+| Pressão     | Valor |
+| -------------    | ------------- |
+| Objetiva | 8 mca |
+| Máxima | 12 mca  |
+
+```mermaid
+flowchart LR
+    subgraph ETA["ETA Centro"]
+    end
+
+    subgraph B1["EEAT Centro/Malhado"]
+    end
+
+    subgraph B2["Booster Carvalho"]
+    end
+
+    subgraph Bairro[" - "]
+    end
+
+    ETA --> B1
+    B1 --> B2
+    B2 --> Bairro
+```
+
+
 ### Booster Soledade Alta
 | Parâmetro     | Valor |
 | -------------    | ------------- |
@@ -60,7 +92,7 @@ Dependendo do setor que queira ajustar, utilize a tabela abaixo para configurar 
 | Liga máx. montante  | 20,0 mca|
 | Desliga mín. montante  | 4,0 mca|
 
-### Booster Soledade Intermediárira
+### Booster Soledade Intermediária (AUTAG)
 | Parâmetro     | Valor |
 | -------------    | ------------- |
 | Início horário de ponta  | 12:00 |
@@ -69,3 +101,40 @@ Dependendo do setor que queira ajustar, utilize a tabela abaixo para configurar 
 | Liga mín. jusante  | 45,0 mca|
 | Liga máx. montante  | 20,0 mca|
 | Desliga mín. montante  | 4,0 mca|
+
+
+
+### Booster Novo Ilhéus (Local)
+| Parâmetro     | Valor |
+| -------------    | ------------- |
+| Início | 04:00 |
+| Final | 13:30  |
+
+Pontos relacionados:
+- [49949080 - NOVO ILHEUS NOSSA SENHORA APAR](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBYgUAHeku9slPteHB1pGu94UuY4GBI=)
+  
+| Pressão     | Valor |
+| -------------    | ------------- |
+| Objetiva | 10 mca |
+| Máxima | 18 mca  |
+
+```mermaid
+flowchart LR
+    subgraph ETA["ETA Distrito"]
+    end
+
+    subgraph B1["Recalque"]
+    end
+
+    subgraph B2["Booster Novo Ilhéus"]
+    end
+
+    subgraph Bairro["Novo Ilhéus"]
+    end
+
+    ETA --> B1
+    B1 --> B2
+    B2 --> Bairro
+```
+
+## Abastecimentos
