@@ -2,7 +2,16 @@
 
 ## Índice
 
-- [EEAT Pacheco (AUTAG)](#eeat-pacheco-autag)
+- [EEAT Pacheco](#eeat-pacheco-autag)
+- [EEAT Vilela](#eeat-vilela-autag)
+  - [Booster São Francisco](#booster-sao-francisco-autag)
+- [Booster Amparo Intermediária](#booster-amparo-intermediaria-autag)
+- [Booster Amparo Alto](#booster-amparo-alto-autag)
+- [Booster Carvalho](#booster-carvalho-autag)
+- [Booster Soledade Alta](#booster-soledade-alta-autag)
+- [Booster Soledade Intermediária](#booster-soledade-intermediaria-autag)
+- [Booster Novo Ilhéus](#booster-novo-ilheus-autag)
+
 
 ## 🕐 Horários de ponta AUTAG
 
@@ -142,7 +151,7 @@ flowchart LR
     B3 --> Bairro
 ```
 
-### Booster Amparo Intermediário (AUTAG)
+### Booster Amparo Intermediária (AUTAG)
 | Parâmetro     | Valor |
 | -------------    | ------------- |
 | Início horário de ponta  | 12:00 |
@@ -174,7 +183,7 @@ flowchart LR
     B2 --> Bairro
 ```
 
-### Booster Amparo Alto
+### Booster Amparo Alto (AUTAG)
 | Parâmetro     | Valor |
 | -------------    | ------------- |
 | Início horário de ponta  | 12:00 |
@@ -184,7 +193,7 @@ flowchart LR
 | Liga máx. montante  | 20,0 mca|
 | Desliga mín. montante  | 4,0 mca|
 
-### Booster Carvalho
+### Booster Carvalho (AUTAG)
 | Parâmetro     | Valor |
 | -------------    | ------------- |
 | Início horário de ponta  | 12:00 |
@@ -222,7 +231,7 @@ flowchart LR
 ```
 
 
-### Booster Soledade Alta
+### Booster Soledade Alta (AUTAG)
 | Parâmetro     | Valor |
 | -------------    | ------------- |
 | Início horário de ponta  | 12:00 |
