@@ -113,6 +113,7 @@ Abastecimento normalmente entre `00:00` e `13:00`
 
 Pontos relacionados:
 - [49946507 - SAO JOÃO 493 MAT 46278583](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBU3VqHeku9slPteHB1pGu94UuVtVLI=)
+- [49944753 - VILELA PARTE ALTA MAT 4663577!](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBUgUqHeku9slPteHB1pGu94UrDrVBM=)
 
 ```mermaid
 flowchart LR
@@ -214,6 +215,29 @@ flowchart LR
 | Liga mín. jusante  | 45,0 mca|
 | Liga máx. montante  | 20,0 mca|
 | Desliga mín. montante  | 4,0 mca|
+
+Pontos relacionados:
+- [49702934 - R NOSSA SENHORA DE LOURDES 159](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBCgVAHeku9slPteHB1pGu94UuC3HrU=)
+- [49949304 - TERCEIRA TRAVESSA ALTO DA SOLE](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBCgVqHeku9slPteHB1pGu94UrM2GrU=)
+
+```mermaid
+flowchart LR
+    subgraph ETA["ETA Centro"]
+    end
+
+    subgraph B1["EEAT Centro/Malhado"]
+    end
+
+    subgraph B2["Booster Soledade Intermédiaria"]
+    end
+
+    subgraph Bairro[" - "]
+    end
+
+    ETA --> B1
+    B1 --> B2
+    B2 --> Bairro
+```
 
 
 
