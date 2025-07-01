@@ -2,7 +2,7 @@
 
 ## Índice
 
-- [EEAT Pacheco (AUTAG)](#eeat-pacheco-(autag))
+- [EEAT Pacheco (AUTAG)](#eeat-pacheco-autag)
 
 ## 🕐 Horários de ponta AUTAG
 
