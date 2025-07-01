@@ -1,5 +1,9 @@
 # Documentação CCO - Ilhéus
 
+## Índice
+
+- [EEAT Pacheco (AUTAG)](#eeat-pacheco-(autag))
+
 ## 🕐 Horários de ponta AUTAG
 
 Ao ajustar os parâmetros do horário de ponta `inicial` e `final` de cada CMB, é preciso considerar a falta de sincronização com o relógio principal. 
