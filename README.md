@@ -10,7 +10,7 @@
 - [Booster Carvalho](#booster-carvalho-autag)
 - [Booster Soledade Alta](#booster-soledade-alta-autag)
 - [Booster Soledade Intermediária](#booster-soledade-intermediária-autag)
-- [Booster Novo Ilhéus](#booster-novo-ilhéus-autag)
+- [Booster Novo Ilhéus](#booster-novo-ilhéus-local)
 
 
 ## 🕐 Horários de ponta AUTAG
