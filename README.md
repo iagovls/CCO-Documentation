@@ -5,12 +5,12 @@
 - [EEAT Pacheco](#eeat-pacheco-autag)
 - [EEAT Vilela](#eeat-vilela-autag)
   - [Booster São Francisco](#booster-sao-francisco-autag)
-- [Booster Amparo Intermediária](#booster-amparo-intermediaria-autag)
+- [Booster Amparo Intermediária](#booster-amparo-intermediária-autag)
 - [Booster Amparo Alto](#booster-amparo-alto-autag)
 - [Booster Carvalho](#booster-carvalho-autag)
 - [Booster Soledade Alta](#booster-soledade-alta-autag)
-- [Booster Soledade Intermediária](#booster-soledade-intermediaria-autag)
-- [Booster Novo Ilhéus](#booster-novo-ilheus-autag)
+- [Booster Soledade Intermediária](#booster-soledade-intermediária-autag)
+- [Booster Novo Ilhéus](#booster-novo-ilhéus-autag)
 
 
 ## 🕐 Horários de ponta AUTAG
