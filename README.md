@@ -2,6 +2,8 @@
 
 ## Índice
 
+### ETA Centro
+
 - [EEAT Pacheco](#eeat-pacheco-autag)
 - [EEAT Vilela](#eeat-vilela-autag)
   - [Booster São Francisco](#booster-sao-francisco-autag)
@@ -37,6 +39,44 @@ Dependendo do setor que queira ajustar, utilize a tabela abaixo para configurar 
 
 
 
+### EEAT Basílio (AUTAG)
+
+Abastecimento normalmente entre `22:00` e `16:00`
+
+| Parâmetro     | Valor |
+| -------------    | ------------- |
+| Início horário de ponta  | 15:40 |
+| Final horário de ponta  | 21:40 |
+| Desliga máx. jusante  | 4,00 m|
+| Liga mín. jusante  | 3,00 m|
+| Liga máx. montante  | 2,10 m|
+| Desliga mín. montante  | 1,20 m|
+| Frequência  | 60 hz|
+| Setpoint  | 3,50 m|
+
+Pontos relacionados:
+- [49943042 - ALTO LUIZ GAMA 89 MAT 46223991](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBQ3VqHeku9slPteHB1pGu94UrUgUBM=)
+- [49932010 - RUA PORTO SEGURO PARK NOVA ESP](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WLs3VgHeku9slPteHB1pGu94Urk4WEG=)
+  
+```mermaid
+flowchart LR
+    subgraph ETA["ETA Centro"]
+    end
+
+    subgraph B1["EEAT Basílio"]
+    end
+
+    subgraph B2["RED Basílio"]
+    end
+    
+
+    subgraph Bairro[" Bairros: Basílio, Salobrinho "]
+    end
+
+    ETA --> B1
+    B1 --> B2
+    B1 --> Bairro
+```
 ### EEAT Pacheco (AUTAG)
 
 Abastecimento normalmente entre `03:00` e `13:00`
