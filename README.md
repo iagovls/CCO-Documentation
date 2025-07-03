@@ -6,7 +6,7 @@
 - [EEAT Vilela](#eeat-vilela-autag)
   - [Booster São Francisco](#booster-sao-francisco-autag)
 - [Booster Amparo Intermediária](#booster-amparo-intermediária-autag)
-- [Booster Amparo Alto](#booster-amparo-alto-autag)
+- [Booster Amparo Alta](#booster-amparo-alta-autag)
 - [Booster Carvalho](#booster-carvalho-autag)
 - [Booster Soledade Alta](#booster-soledade-alta-autag)
 - [Booster Soledade Intermediária](#booster-soledade-intermediária-autag)
@@ -172,7 +172,7 @@ flowchart LR
     subgraph B1["EEAT Centro/Malhado"]
     end
 
-    subgraph B2["Booster Amparo Intermediário"]
+    subgraph B2["Booster Amparo Intermediária"]
     end
 
     subgraph Bairro[" - "]
@@ -183,7 +183,7 @@ flowchart LR
     B2 --> Bairro
 ```
 
-### Booster Amparo Alto (AUTAG)
+### Booster Amparo Alta (AUTAG)
 | Parâmetro     | Valor |
 | -------------    | ------------- |
 | Início horário de ponta  | 12:00 |
@@ -192,6 +192,30 @@ flowchart LR
 | Liga mín. jusante  | 58,0 mca|
 | Liga máx. montante  | 20,0 mca|
 | Desliga mín. montante  | 4,0 mca|
+
+Pontos relacionados:
+- [49947823 - RUA AMENDOEIRA 226 MAT 4662169](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBU4VKHeku9slPteHB1pGu94UrDrHrY=)
+- [49701925 - OITAVA TRAVESSA LEGIÃO 53 S 33](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBCgWAHeku9slPteHB1pGu94UuCgHrG=)
+- [49701960 - R BELA VISTA ALTO D LEGIÃO S33](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBChUKHeku9slPteHB1pGu94UrQ0VrM=)
+
+```mermaid
+flowchart LR
+    subgraph ETA["ETA Centro"]
+    end
+
+    subgraph B1["EEAT Centro/Malhado"]
+    end
+
+    subgraph B2["Booster Amparo Alta"]
+    end
+
+    subgraph Bairro[" - "]
+    end
+
+    ETA --> B1
+    B1 --> B2
+    B2 --> Bairro
+```
 
 ### Booster Carvalho (AUTAG)
 | Parâmetro     | Valor |
@@ -240,6 +264,29 @@ flowchart LR
 | Liga mín. jusante  | 45,0 mca|
 | Liga máx. montante  | 20,0 mca|
 | Desliga mín. montante  | 4,0 mca|
+
+Pontos relacionados:
+- [49950883 - QUINTA TRAVESSA ALTO DA SOLEDA](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBCgWKHeku9slPteHB1pGu94UrkgUhk=)
+- [49949335 - Sétima Travessa Alto da Soleni](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBCgVgHeku9slPteHB1pGu94Uro2VhQ=)
+
+```mermaid
+flowchart LR
+    subgraph ETA["ETA Centro"]
+    end
+
+    subgraph B1["EEAT Centro/Malhado"]
+    end
+
+    subgraph B2["Booster Soledade Alta"]
+    end
+
+    subgraph Bairro[" - "]
+    end
+
+    ETA --> B1
+    B1 --> B2
+    B2 --> Bairro
+```
 
 ### Booster Soledade Intermediária (AUTAG)
 | Parâmetro     | Valor |
