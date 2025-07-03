@@ -6,7 +6,7 @@
 
 - [EEAT Pacheco](#eeat-pacheco-autag)
 - [EEAT Vilela](#eeat-vilela-autag)
-  - [Booster São Francisco](#booster-sao-francisco-autag)
+  - [Booster São Francisco](#booster-são-francisco-autag)
 - [Booster Amparo Intermediária](#booster-amparo-intermediária-autag)
 - [Booster Amparo Alta](#booster-amparo-alta-autag)
 - [Booster Carvalho](#booster-carvalho-autag)
