@@ -68,14 +68,31 @@ flowchart LR
 
     subgraph B2["RED Basílio"]
     end
-    
 
-    subgraph Bairro[" Bairros: Basílio, Salobrinho "]
+    subgraph B3["RAD Banco da Vitória"]
     end
 
-    ETA --> B1
-    B1 --> B2
-    B1 --> Bairro
+    subgraph B4["Booster Iraque"]
+    end
+    
+
+    subgraph Bairro1[" Bairros: Basílio, Salobrinho "]
+    end
+
+    subgraph Bairro2[" Bairros: Banco da Vitória"]
+    end
+
+    subgraph Bairro3[" Bairros: Iraque"]
+    end
+
+
+    ETA ---> B1
+    B1 ---> B3
+    B3 ---> B4
+    B1 ---> B2
+    B1 ---> Bairro1
+    B3 ---> Bairro2
+    B4 ---> Bairro3
 ```
 ### EEAT Pacheco (AUTAG)
 
