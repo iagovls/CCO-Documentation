@@ -7,6 +7,7 @@
 - [EEAT Pacheco](#eeat-pacheco-autag)
 - [EEAT Vilela](#eeat-vilela-autag)
   - [Booster São Francisco](#booster-são-francisco-autag)
+  - [Booster Condomínio Vilela](#booster-condomínio-vilela-autag)
 - [Booster Amparo Intermediária](#booster-amparo-intermediária-autag)
 - [Booster Amparo Alta](#booster-amparo-alta-autag)
 - [Booster Carvalho](#booster-carvalho-autag)
@@ -32,6 +33,7 @@ Dependendo do setor que queira ajustar, utilize a tabela abaixo para configurar 
 | Booster Outeiro  | 12 minutos `antes`|
 | Booster Mambape  | 8 minutos `antes`|
 | Booster Pontal  | 19 minutos `depois`|
+| Booster Condomínio Vilela  | 9 minutos `antes`|
 
 ## Abastecimentos ETA Centro
 
@@ -200,6 +202,45 @@ flowchart LR
     end    
 
     subgraph Bairro[" Bairro: São Francisco "]
+    end
+
+    ETA --> B1
+    B1 --> B2
+    B2 --> B3
+    B3 --> Bairro
+```
+
+### Booster Condomínio Vilela (AUTAG)
+
+Abastecimento normalmente entre `00:00` e `10:00`
+
+| Parâmetro     | Valor |
+| -------------    | ------------- |
+| Início horário de ponta  | 13:00 |
+| Final horário de ponta  | 23:59 |
+| Desliga máx. jusante  | 80,0 mca|
+| Liga mín. jusante  | 50,0 mca|
+| Liga máx. montante  | 10,0 mca|
+| Desliga mín. montante  | 4,0 mca|
+
+Pontos relacionados:
+- 49947183 - RESIDENCIAL VILÉLA RUA C B. 33](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBU3WKHeku9slPteHB1pGu94UuNpGhY=)
+
+```mermaid
+flowchart LR
+    subgraph ETA["ETA Centro"]
+    end
+
+    subgraph B1["EEAT Vilela"]
+    end
+
+    subgraph B2["RED Vilela"]
+    end
+    
+    subgraph B3["Booster Condomínio Vilela"]
+    end    
+
+    subgraph Bairro["Condomínio Vilela "]
     end
 
     ETA --> B1
@@ -416,6 +457,74 @@ flowchart LR
     ETA --> B1
     B1 --> B2
     B2 --> Bairro
+```
+
+### Booster Parque de Olivença (Local)
+
+Abastecimento normalmente entre `04:00` e `13:00`
+
+Acionamento por temporizador in loco 
+
+| Parâmetro     | Valor |
+| -------------    | ------------- |
+| Início | 04:00 |
+| Final | 13:30  |
+
+Pontos relacionados:
+- [49946143 - R MATA ATLÂNTICA 37 MAT. 50402](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBQgUKHeku9slPteHB1pGu94UuUfWLM=)
+  
+| Pressão     | Valor |
+| -------------    | ------------- |
+| Objetiva | 10 mca |
+| Máxima | 18 mca  |
+
+```mermaid
+flowchart LR
+    subgraph ETA["ETA Pontal"]
+    end
+
+    subgraph B1["Booster Parque de Olivença"]
+    end    
+
+    subgraph Bairro["Rua Mata Atlântica"]
+    end
+
+    ETA --> B1
+    B1 --> Bairro
+```
+
+### Booster Cidadele (Local)
+
+Abastecimento normalmente entre `04:00` e `13:00`
+
+Acionamento por temporizador in loco 
+
+| Parâmetro     | Valor |
+| -------------    | ------------- |
+| Início | 04:00 |
+| Final | 13:30  |
+
+Pontos relacionados:
+- [49942505 - CIDADELE QUADRA T](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBU0UAHeku9slPteHB1pGu94UrJrHrQ=)
+  
+| Pressão     | Valor |
+| -------------    | ------------- |
+| Objetiva | 10 mca |
+| Máxima | 18 mca  |
+
+```mermaid
+flowchart LR
+    subgraph ETA["ETA Pontal"]
+    end
+
+    subgraph B1["Booster Cidadele"]
+    end    
+
+    subgraph Bairro["Cidadele"]
+    end
+
+    ETA --> B1
+    B1 --> Bairro
 ```
 
 ## Abastecimentos
