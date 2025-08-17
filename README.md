@@ -4,6 +4,7 @@
 
 ### ETA Centro
 
+- [EEAT Basílio](#eeat-basílio-autag)
 - [EEAT Pacheco](#eeat-pacheco-autag)
 - [EEAT Vilela](#eeat-vilela-autag)
   - [Booster São Francisco](#booster-são-francisco-autag)
@@ -62,39 +63,55 @@ Pontos relacionados:
   
 ```mermaid
 flowchart LR
-    subgraph ETA["ETA Centro"]
-    end
+        
+    ETA["ETA Centro"]    
 
-    subgraph B1["EEAT Basílio"]
-    end
-
-    subgraph B2["RED Basílio"]
-    end
-
-    subgraph B3["RAD Banco da Vitória"]
-    end
-
-    subgraph B4["Booster Iraque"]
-    end
+    EEATBasilio[/"EEAT Basílio"\] 
     
+    RegistroRedBasilio(("Registro RED Basílio")) 
+    
+    RegistroFrutaria(("Registro Frutaria"))
+    
+    RedBasilio[("RED Basílio")]
+   
+    RadBancoDaVitoria[("RAD Banco da Vitória")]
+    
+    BoosterIraque[/"Booster Iraque"\]
+    
+    Basilio(["Basílio"])
+    
+    BancoDaVitoria(["Banco da Vitória"])
+    
+    Iraque(["Iraque"])
+    
+    Salobrinho(["Salobrinho"])
+    
+    RuaDoOuro(["Rua do Ouro"])
+   
+    ParqueUniversitario(["Parque Universitário"])
+    
+    BoosterRuaDoOuro[/"Booster Rua do Ouro"\]
+    
+    BoosterParqueUniversitario[/"Booster Parque Universitário"\]   
 
-    subgraph Bairro1[" Bairros: Basílio, Salobrinho "]
-    end
 
-    subgraph Bairro2[" Bairros: Banco da Vitória"]
-    end
-
-    subgraph Bairro3[" Bairros: Iraque"]
-    end
-
-
-    ETA ---> B1
-    B1 ---> B3
-    B3 ---> B4
-    B1 ---> B2
-    B1 ---> Bairro1
-    B3 ---> Bairro2
-    B4 ---> Bairro3
+    %% Ligações
+    ETA ---> EEATBasilio
+    EEATBasilio ---> RegistroRedBasilio
+    RegistroRedBasilio ---> RedBasilio
+    RegistroRedBasilio ---> RegistroFrutaria
+    RedBasilio ---> Basilio
+    RegistroFrutaria ---> RadBancoDaVitoria
+    RadBancoDaVitoria ---> BancoDaVitoria
+    RadBancoDaVitoria ---> BoosterIraque
+    BoosterIraque ---> Iraque
+    RegistroFrutaria ---> Salobrinho
+    Salobrinho ---> BoosterRuaDoOuro
+    Salobrinho ---> BoosterParqueUniversitario       
+    BoosterRuaDoOuro---> RuaDoOuro       
+    BoosterParqueUniversitario ---> ParqueUniversitario       
+       
+    
 ```
 ### EEAT Pacheco (AUTAG)
 
