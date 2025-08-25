@@ -4,7 +4,7 @@
 
 ### ETA Centro
 
-- [EEAT Basílio](#eeat-basílio-autag)
+- [EEAT Basílio](/Basilio.md)
 - [EEAT Pacheco](#eeat-pacheco-autag)
 - [EEAT Vilela](#eeat-vilela-autag)
   - [Booster São Francisco](#booster-são-francisco-autag)
