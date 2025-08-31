@@ -6,6 +6,7 @@
 
 - [EEAT Basílio](Basílio/Basílio.md)
   - [Booster Iraque](Basílio/Booster%20Iraque.md)
+  - [Booster Rua do Ouro](Basílio/Booster%20Rua%20do%20Ouro.md)
 - [EEAT Pacheco](#eeat-pacheco-autag)
 - [EEAT Vilela](#eeat-vilela-autag)
   - [Booster São Francisco](#booster-são-francisco-autag)
