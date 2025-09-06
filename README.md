@@ -35,7 +35,7 @@ Dependendo do setor que queira ajustar, utilize a tabela abaixo para configurar 
 | Booster Mar a Vista     | 7 minutos `antes`|
 | Booster Pérola do Mar  | 6 minutos `antes`|
 | Booster Outeiro  | 12 minutos `antes`|
-| Booster Mambape  | 8 minutos `antes`|
+| Booster Mambape  | 10 minutos `antes`|
 | Booster Pontal  | 19 minutos `depois`|
 | Booster Condomínio Vilela  | 9 minutos `antes`|
 
