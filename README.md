@@ -30,8 +30,8 @@ Dependendo do setor que queira ajustar, utilize a tabela abaixo para configurar 
 | -------------    | ------------- |
 | Captação Iguape  | 9 minutos `depois`|
 | Captação do Engenho  | 1 minutos `depois`|
-| ETA Centro       | 20 minutos `antes`|
-| ETA Distrito     | 10 minutos `antes`|
+| ETA Centro       | 22 minutos `antes`|
+| ETA Distrito     | 12 minutos `antes`|
 | ETA Pontal     | Não funciona|
 | Booster Mar a Vista     | 7 minutos `antes`|
 | Booster Pérola do Mar  | 6 minutos `antes`|
