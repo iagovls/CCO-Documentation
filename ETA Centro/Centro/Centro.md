@@ -21,7 +21,7 @@ Pontos relacionados:
 ```mermaid
 flowchart LR
         
-    ETA["ETA Centro"]    
+    ETA["ETA Centro 2000 m³"]    
 
     EEATCentro[/"EEAT Centro"\] 
     
