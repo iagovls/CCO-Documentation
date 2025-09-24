@@ -24,20 +24,27 @@ flowchart LR
         
     ETA["ETA Centro"]    
 
-    EEATConquistaInter[/"EEAT Conquista Intermediária"\]       
+    EEATConquistaInter[/"EEAT Conquista Intermediária"\]
+
+    RegistroCanavItab(("Registro Av. Canavieiras x Av. Itabuna"))    
    
     RadConquista[("RAD Conquista")]    
        
     ConquistaInter(["Conquista Inter"])
     
     TeresopolisInter(["Teresópolis Parte Intermediária"])   
+    RuaPadreJoseAnchieta(["Rua Padre José Anchieta"])
+
      
 
 
     %% Ligações
-    ETA ---> EEATConquistaInter
-    EEATConquistaInter ---> RadConquista        
-    RadConquista ---> ConquistaInter
-    RadConquista ---> TeresopolisInter
+    ETA --> EEATConquistaInter
+    EEATConquistaInter --> RegistroCanavItab        
+    RegistroCanavItab --> RadConquista        
+    RegistroCanavItab --> |Registro estrangulado em 3 voltas| RuaPadreJoseAnchieta
+
+    RadConquista --> ConquistaInter
+    RadConquista --> TeresopolisInter
  
 ```
