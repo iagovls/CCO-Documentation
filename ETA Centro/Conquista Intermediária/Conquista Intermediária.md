@@ -28,7 +28,7 @@ flowchart LR
 
     RegistroCanavItab(("Registro Av. Canavieiras x Av. Itabuna"))    
    
-    RadConquista[("RAD Conquista")]    
+    RadConquista[("RAD Conquista 1000 m³")]    
        
     ConquistaInter(["Conquista Inter"])
     
