@@ -28,9 +28,9 @@ flowchart LR
     
     RegistroFrutaria(("Registro Frutaria"))
     
-    RedBasilio[("RED Basílio")]
+    RedBasilio[("RED Basílio 200 m³")]
    
-    RadBancoDaVitoria[("RAD Banco da Vitória")]
+    RadBancoDaVitoria[("RAD Banco da Vitória 500 m³")]
     
     BoosterIraque[/"Booster Iraque"\]
     
