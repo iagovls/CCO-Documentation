@@ -10,7 +10,7 @@
   - [Booster Amparo Intermediária](ETA%20Centro/Centro/Booster%20Amparo%20Intermediária.md)
   - [Booster Amparo Alta](ETA%20Centro/Centro/Booster%20Amparo%20Alta.md)
   - [Booster Carvalho](ETA%20Centro/Centro/Booster%20Carvalho.md)
-  - [Booster Soledade Alta](ETA%20Centro/Centro/Booster%20Soledade%20Alta.md)
+  - [Booster Soledade Alta](Centro/Booster%20Soledade%20Alta.md)
   - [Booster Soledade Intermediária](ETA%20Centro/Centro/Booster%20Soledade%20Intermediária.md)
 - [EEAT Pacheco](ETA%20Centro/Pacheco/Pacheco.md)
 - [EEAT Conquista Intermediária](ETA%20Centro/Conquista%20Intermediária/Conquista%20Intermediária.md)
