@@ -1,10 +1,9 @@
 # ETA Distrito
 
-| Setor     | Ajustar para |
-| -------------    | ------------- |
-| Endereço  | Carobeira |
-| Matrícula  | 178795321 |
-| Vazão       | 250 m³/h |
+## Informações
+Endereço: Estrada Carobeira 
+Matrícula: 178795321 
+Vazão: 250 m³/h 
 
 
 ## Operadores
