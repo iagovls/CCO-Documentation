@@ -62,15 +62,14 @@ flowchart LR
     BoosterCachorroPelado[/"Booster Cachorro Pelado"\] 
     SaoJose(["São José"]) 
     CachorroPelado(["Cachorro Pelado"])
-    A@{ shape: sm-circ, label: "Small start" }
+    
     B@{ shape: sm-circ, label: "Small start" }
 
     %% Ligações
     
     ETA --> EEATRecalque
 
-    EEATRecalque --> Setor28
-    EEATRecalque --> Setor31
+    
 
 
     %% Sambaituba  
@@ -97,44 +96,15 @@ flowchart LR
   
 
     
-    %% Iguape
-    subgraph Setor28 [Setor 28]
-      Iguape
-    end
 
 
-    %% Setor 31
-    subgraph Setor31 [Setor 31]
-      CentroIndustrial
-      Barra
-      Savoia
-    end
-
-    %% São Miguel e São Domingos
-    EEATRecalque --> A
-    A --> SaoMiguel
-    A --> SaoDomingos
-
-    %% Novo Ilhéus
-    EEATRecalque --> BoosterNovoIlheus
-    BoosterNovoIlheus --> Setor29
-    subgraph Setor29 [Setor 29]
-      NovoIlheus
-    end
-
-    %% São José
-    ETA --> EEATSaoJose    
-    EEATSaoJose --> B
-    subgraph Loc1317 [Localização 1317]
-      subgraph Setor 1
-        B --> SaoJose
-        B --> BoosterCachorroPelado
-        BoosterCachorroPelado --> CachorroPelado
-      end
-    end
 
 
-    %% Cachorro Pelado
+
+
+
+
+
 
     %% Parque Infantil
     EEATRecalque --> |Manobra para abastecer até o Parque Infantil. Registro usualmente fechado.| ParqueInfantil
