@@ -28,12 +28,18 @@ flowchart LR
     EEATSaoJose[/"EEAT São José"\] 
     BoosterCachorroPelado[/"Booster Cachorro Pelado"\] 
     SaoJose(["São José"]) 
-    CachorroPelado(["Cachorro Pelado"]) 
+    CachorroPelado(["Cachorro Pelado"])
+    A@{ shape: sm-circ, label: "Small start" }
 
-    %% Ligações
-    ETA --> EEATSaoJose
-    EEATSaoJose --> SaoJose
-    EEATSaoJose --> BoosterCachorroPelado
-    BoosterCachorroPelado --> CachorroPelado
+%% São José
+    ETA --> EEATSaoJose    
+    EEATSaoJose --> A
+    subgraph Loc1317 [Localização 1317]
+      subgraph Setor 1
+        A --> SaoJose
+        A --> BoosterCachorroPelado
+        BoosterCachorroPelado --> CachorroPelado
+      end
+    end
         
 ```
