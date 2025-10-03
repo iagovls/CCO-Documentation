@@ -54,6 +54,7 @@ flowchart LR
     ETA["ETA Distrito"] 
     EEATRecalque[/"EEAT Recalque"\]
     BoosterNovoIlheus[/"Booster Novo Ilhéus"\]
+    click BoosterNovoIlheus "https://github.com/iagovls/CCO-Documentation/blob/main/ETA%20Distrito/Booster%20Novo%20Ilh%C3%A9us.md"
     RADSambaituba[(RAD Sambaituba)]
     Iguape(["Iguape"]) 
     Savoia(["Savóia"]) 
@@ -63,25 +64,48 @@ flowchart LR
     SaoDomingos(["São Domingos"]) 
     Juerana(["Juerana"]) 
     Sambaituba(["Sambaituba"]) 
-    NovoIlheus(["Novo Ilhéus"]) 
+    NovoIlheus(["Novo Ilhéus"])
+    A@{ shape: sm-circ, label: "Small start" }
 
     %% Ligações
     ETA --> EEATRecalque
-    EEATRecalque --> Iguape
-    Iguape --> Savoia
-    Savoia --> Barra
-    Barra --> ParqueInfantil
+    EEATRecalque --> Setor28
+    EEATRecalque --> Setor31
+
+    %% São Miguel e São Domingos
+    EEATRecalque --> A
+    A --> SaoMiguel
+    A --> SaoDomingos
+
+
+    %% Iguape
+    subgraph Setor28 [Setor 28]
+      Iguape
+    end
+
+
+    %% Setor 31
+    subgraph Setor31 [Setor 31]
+      CentroIndustrial
+      Barra
+      Savoia
+    end
+
+%% Sambaituba  
+    subgraph Loc1315
+      subgraph Setor1
+        Sambaituba
+        Urucutuca
+      end 
+    end
 
     EEATRecalque --> RADSambaituba
-    RADSambaituba --> Sambaituba
+    RADSambaituba --> Loc1315
 
-    EEATRecalque --> SaoMiguel
-    EEATRecalque --> SaoDomingos
+    
 
     EEATRecalque --> BoosterNovoIlheus
-    BoosterNovoIlheus --> NovoIlheus
 
-    SaoDomingos --> Juerana
 
     
 
