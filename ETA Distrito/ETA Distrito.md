@@ -4,7 +4,7 @@
 - Endereço: Estrada Carobeira
 - Matrícula: 178795321
 - Vazão: 250 m³/h
-- Volume do RAD: -
+- Volume do RAD: 1400 m³
 - Volume do RED: -
 
 
@@ -43,9 +43,11 @@ flowchart LR
     ETA["ETA Distrito"] 
     EEATRecalque[/"EEAT Recalque"\]
     EEATSaoJose[/"EEAT São José"\] 
+    EEATLitoralNorte[/"EEAT Litoral Norte"\] 
     BoosterNovoIlheus[/"Booster Novo Ilhéus"\]
     Cargil(["Cargil"]) 
     RADSambaituba[(RAD Sambaituba)]
+    RADJuerana[(RAD Juerana)]
     Iguape(["Iguape"]) 
     CentroIndustrial(["Centro Industrial"]) 
     Savoia(["Savóia"]) 
@@ -61,12 +63,12 @@ flowchart LR
     SaoJose(["São José"]) 
     CachorroPelado(["Cachorro Pelado"])
     A@{ shape: sm-circ, label: "Small start" }
+    B@{ shape: sm-circ, label: "Small start" }
 
     %% Ligações
     
     ETA --> EEATRecalque
 
-    EEATRecalque --> Setor23
     EEATRecalque --> Setor28
     EEATRecalque --> Setor31
 
@@ -84,6 +86,9 @@ flowchart LR
 
 
     %% Litoral Norte
+    ETA --> EEATLitoralNorte
+    EEATLitoralNorte --> RADJuerana
+    RADJuerana --> Setor23
     subgraph Setor23 [Setor 23]
       subgraph LitoralNorte [Litoral Norte]
         Juerana
@@ -119,17 +124,17 @@ flowchart LR
 
     %% São José
     ETA --> EEATSaoJose    
-    EEATSaoJose --> Loc1317
+    EEATSaoJose --> B
     subgraph Loc1317 [Localização 1317]
       subgraph Setor 1
-        SaoJose
+        B --> SaoJose
+        B --> BoosterCachorroPelado
+        BoosterCachorroPelado --> CachorroPelado
       end
     end
 
 
     %% Cachorro Pelado
-    EEATSaoJose --> BoosterCachorroPelado
-    BoosterCachorroPelado --> CachorroPelado
 
     %% Parque Infantil
     EEATRecalque --> |Manobra para abastecer até o Parque Infantil. Registro usualmente fechado.| ParqueInfantil
