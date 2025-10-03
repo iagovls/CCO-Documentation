@@ -10,6 +10,7 @@ Acionamento por temporizador in loco
 | Final | 13:30  |
 
 Pontos relacionados:
+- [49701345 - NOVO ILHEUS RUA NOSSA SENHORA](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBYgUKHeku9slPteHB1pGu94UrY4VrM=)
 - [49949080 - NOVO ILHEUS NOSSA SENHORA APAR](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBYgUAHeku9slPteHB1pGu94UuY4GBI=)
   
 | Pressão     | Valor |
@@ -19,19 +20,17 @@ Pontos relacionados:
 
 ```mermaid
 flowchart LR
-    subgraph ETA["ETA Distrito"]
-    end
+    ETA["ETA Distrito"]   
+    EEATRecalque[/"EEAT Recalque"\]
+    BoosterNovoIlheus[/"Booster Novo Ilhéus"\]    
+    NovoIlheus(["Novo Ilhéus"])
+    
+    %% Novo Ilhéus
 
-    subgraph B1["Recalque"]
+    ETA --> EEATRecalque
+    EEATRecalque --> BoosterNovoIlheus
+    BoosterNovoIlheus --> Setor29
+    subgraph Setor29 [Setor 29]
+      NovoIlheus
     end
-
-    subgraph B2["Booster Novo Ilhéus"]
-    end
-
-    subgraph Bairro["Novo Ilhéus"]
-    end
-
-    ETA --> B1
-    B1 --> B2
-    B2 --> Bairro
 ```
