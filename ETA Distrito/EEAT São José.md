@@ -25,7 +25,8 @@ flowchart LR
         
     ETA["ETA Distrito"] 
     EEATSaoJose[/"EEAT São José"\] 
-    BoosterCachorroPelado[/"Booster Cachorro Pelado"\] 
+    BoosterCachorroPelado[/"Booster Cachorro Pelado"\]
+    click BoosterCachorroPelado "https://github.com/iagovls/CCO-Documentation/blob/main/ETA%20Distrito/Booster%20Cachorro%20Pelado.md"
     SaoJose(["São José"]) 
     CachorroPelado(["Cachorro Pelado"])
     A@{ shape: sm-circ, label: "Small start" }
