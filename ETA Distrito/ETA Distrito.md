@@ -34,81 +34,28 @@
 ## 📖 Índice
 
 - [EEAT Recalque](EEAT%20Recalque.md)
-  - [Booster Novo Ilhéus](Booster%20Novo%20Ilhéus.md)
 - [EEAT São José](EEAT%20São%20José.md)
+- [EEAT Litoral Norte](EEAT%20Litoral%20Norte.md)
 
 ```mermaid
 flowchart LR
         
     ETA["ETA Distrito"] 
     EEATRecalque[/"EEAT Recalque"\]
-    EEATSaoJose[/"EEAT São José"\] 
+    click EEATRecalque "https://github.com/iagovls/CCO-Documentation/blob/main/ETA%20Distrito/EEAT%20Recalque.md"
+    EEATSaoJose[/"EEAT São José"\]
+    click EEATSaoJose "https://github.com/iagovls/CCO-Documentation/blob/main/ETA%20Distrito/EEAT%20S%C3%A3o%20Jos%C3%A9.md"
     EEATLitoralNorte[/"EEAT Litoral Norte"\] 
-    BoosterNovoIlheus[/"Booster Novo Ilhéus"\]
-    Cargil(["Cargil"]) 
-    RADSambaituba[(RAD Sambaituba)]
-    RADJuerana[(RAD Juerana)]
-    Iguape(["Iguape"]) 
-    CentroIndustrial(["Centro Industrial"]) 
-    Savoia(["Savóia"]) 
-    Barra(["Barra"]) 
-    ParqueInfantil(["Parque Infantil"]) 
-    SaoMiguel(["São Miguel"]) 
-    SaoDomingos(["São Domingos"]) 
-    Juerana(["Juerana"]) 
-    LitoralNorte(["LitoralNorte"]) 
-    Sambaituba(["Sambaituba"]) 
-    NovoIlheus(["Novo Ilhéus"])
-    BoosterCachorroPelado[/"Booster Cachorro Pelado"\] 
-    SaoJose(["São José"]) 
-    CachorroPelado(["Cachorro Pelado"])
+    click EEATLitoralNorte "https://github.com/iagovls/CCO-Documentation/blob/main/ETA%20Distrito/EEAT%20Litoral%20Norte.md"
     
-    B@{ shape: sm-circ, label: "Small start" }
 
     %% Ligações
     
     ETA --> EEATRecalque
-
-    
-
-
-    %% Sambaituba  
-    subgraph Loc1315
-      subgraph Setor1
-        Sambaituba
-        Urucutuca
-      end 
-    end
-
-    EEATRecalque --> RADSambaituba
-    RADSambaituba --> Loc1315
-
-
-    %% Litoral Norte
+    ETA --> EEATSaoJose
     ETA --> EEATLitoralNorte
-    EEATLitoralNorte --> RADJuerana
-    RADJuerana --> Setor23
-    subgraph Setor23 [Setor 23]
-      subgraph LitoralNorte [Litoral Norte]
-        Juerana
-      end
-    end
-  
 
     
-
-
-
-
-
-
-
-
-
-
-    %% Parque Infantil
-    EEATRecalque --> |Manobra para abastecer até o Parque Infantil. Registro usualmente fechado.| ParqueInfantil
-
     %% Cargil
     EEATRecalque --> Cargil
     
