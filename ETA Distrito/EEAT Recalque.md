@@ -59,6 +59,7 @@ flowchart LR
     SaoMiguel(["São Miguel"]) 
     SaoDomingos(["São Domingos"]) 
     Cargil(["Cargil"]) 
+    ParqueInfantil(["Parque Infantil*"]) 
     A@{ shape: sm-circ, label: "Small start" }
 
     %% Ligações
@@ -102,9 +103,8 @@ flowchart LR
 
     EEATRecalque --> BoosterNovoIlheus
 
-
-    
-
-    
-        
+    %% Parque Infantil
+    EEATRecalque -->  ParqueInfantil
 ```
+
+`* Manobra para abastecer até o Parque Infantil. Registro usualmente fechado.`
