@@ -56,8 +56,7 @@ flowchart LR
     ETA --> EEATLitoralNorte
 
     
-    %% Cargil
-    EEATRecalque --> Cargil
+
     
     
 
