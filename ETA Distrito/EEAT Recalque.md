@@ -35,18 +35,12 @@ Pontos relacionados:
 - São Domingos
   - [49941803 - RUA INGA 166 MAT 46477675](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBU5VAHeku9slPteHB1pGu94UrDrVrY=)
 
-- Juerana
-  - [49940200 - MACRO MEDIDOR JUERANA](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBk3VAHeku9slPteHB1pGu94UrJtVLM=)
-  - [49702414 - MACRO MEDIDOR MAR E SOL*](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBk3VqHeku9slPteHB1pGu94UuHuULM=)
-  
 - Sambaituba
   - [49944125 - RODOVIA SAMBAITUBA PEDREIRA](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBYhUAHeku9slPteHB1pGu94UrY4HrM=)
   - [49941484 - SAO JOAO RUA DA JAQUEIRA MAT 4](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBYgWAHeku9slPteHB1pGu94UrNtGBk=)
   - [49943562 - RODOVIA ARITAGUA SAMBAITUBA](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBYhUKHeku9slPteHB1pGu94UuY4UhI=)
 
-- Novo Ilhéus
-  - [49701345 - NOVO ILHEUS RUA NOSSA SENHORA](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBYgUKHeku9slPteHB1pGu94UrY4VrM=)
-  - [49949080 - NOVO ILHEUS NOSSA SENHORA APAR](https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249WBYgUAHeku9slPteHB1pGu94UuY4GBI=)
+
   
 ```mermaid
 flowchart LR
@@ -56,19 +50,19 @@ flowchart LR
     BoosterNovoIlheus[/"Booster Novo Ilhéus"\]
     click BoosterNovoIlheus "https://github.com/iagovls/CCO-Documentation/blob/main/ETA%20Distrito/Booster%20Novo%20Ilh%C3%A9us.md"
     RADSambaituba[(RAD Sambaituba)]
+    Sambaituba(["Sambaituba"]) 
+    Urucutuca(["Urucutuca"]) 
+    CentroIndustrial(["Centro Industrial"]) 
     Iguape(["Iguape"]) 
     Savoia(["Savóia"]) 
     Barra(["Barra"]) 
-    ParqueInfantil(["Parque Infantil"]) 
     SaoMiguel(["São Miguel"]) 
     SaoDomingos(["São Domingos"]) 
-    Juerana(["Juerana"]) 
-    Sambaituba(["Sambaituba"]) 
-    NovoIlheus(["Novo Ilhéus"])
     A@{ shape: sm-circ, label: "Small start" }
 
     %% Ligações
     ETA --> EEATRecalque
+
     EEATRecalque --> Setor28
     EEATRecalque --> Setor31
 
