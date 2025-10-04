@@ -23,7 +23,7 @@ flowchart LR
         
     ETA["ETA Distrito"] 
     EEATSaoJose[/"EEAT São José"\]
-    click EEATSaoJose "EEAT%20São%20José.md"
+    click EEATSaoJose "https://github.com/iagovls/CCO-Documentation/blob/main/ETA%20Distrito/EEAT%20S%C3%A3o%20Jos%C3%A9.md"
     BoosterCachorroPelado[/"Booster Cachorro Pelado"\] 
     SaoJose(["São José"]) 
     CachorroPelado(["Cachorro Pelado"])
