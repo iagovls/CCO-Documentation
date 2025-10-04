@@ -58,6 +58,7 @@ flowchart LR
     Barra(["Barra"]) 
     SaoMiguel(["São Miguel"]) 
     SaoDomingos(["São Domingos"]) 
+    Cargil(["Cargil"]) 
     A@{ shape: sm-circ, label: "Small start" }
 
     %% Ligações
@@ -65,6 +66,7 @@ flowchart LR
 
     EEATRecalque --> Setor28
     EEATRecalque --> Setor31
+    EEATRecalque --> Cargil
 
     %% São Miguel e São Domingos
     EEATRecalque --> A
