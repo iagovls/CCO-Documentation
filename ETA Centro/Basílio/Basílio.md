@@ -24,48 +24,34 @@ flowchart LR
 
     EEATBasilio[/"EEAT Basílio"\] 
     
-    RegistroRedBasilio(("Registro RED Basílio")) 
-    
-    RegistroFrutaria(("Registro Frutaria"))
-    
-    RedBasilio[("RED Basílio 200 m³")]
    
-    RadBancoDaVitoria[("RAD Banco da Vitória 500 m³")]
     
+    RedBasilio[("RED Basílio 200 m³")]   
+    RadBancoDaVitoria[("RAD Banco da Vitória 500 m³")]    
     BoosterIraque[/"Booster Iraque"\]
-    
-    Basilio(["Basílio"])
-    
-    BancoDaVitoria(["Banco da Vitória"])
-    
-    Iraque(["Iraque"])
-    
-    Salobrinho(["Salobrinho"])
-    
-    RuaDoOuro(["Rua do Ouro"])
-   
-    ParqueUniversitario(["Parque Universitário"])
-    
+    click BoosterIraque "https://github.com/iagovls/CCO-Documentation/blob/main/ETA%20Centro/Bas%C3%ADlio/Booster%20Iraque.md"
+    Basilio(["Basílio"])    
+    BancoDaVitoria(["Banco da Vitória"])    
+    Salobrinho(["Salobrinho"])    
     BoosterRuaDoOuro[/"Booster Rua do Ouro"\]
-    
-    BoosterParqueUniversitario[/"Booster Parque Universitário"\]   
-
+    click BoosterRuaDoOuro "https://github.com/iagovls/CCO-Documentation/blob/main/ETA%20Centro/Bas%C3%ADlio/Booster%20Rua%20do%20Ouro.md"
+BoosterParqueUniversitario[/"Booster Parque Universitário"\]   
+    click BoosterParqueUniversitario "https://github.com/iagovls/CCO-Documentation/blob/main/ETA%20Centro/Bas%C3%ADlio/Booster%20Parque%20Universit%C3%A1rio.md"
+    RegistroRedBasilio@{shape: sm-circ}
+    RegistroFrutaria@{shape: sm-circ}
 
     %% Ligações
     ETA ---> EEATBasilio
     EEATBasilio ---> RegistroRedBasilio
-    RegistroRedBasilio ---> RedBasilio
-    RegistroRedBasilio ---> RegistroFrutaria
+    RegistroRedBasilio ---> |Registro estrangulado| RedBasilio
     RedBasilio ---> Basilio
+    RegistroRedBasilio ---> RegistroFrutaria
     RegistroFrutaria ---> RadBancoDaVitoria
     RadBancoDaVitoria ---> BancoDaVitoria
     RadBancoDaVitoria ---> BoosterIraque
-    BoosterIraque ---> Iraque
-    RegistroFrutaria ---> Salobrinho
+    RegistroFrutaria --->|Registro aberto| Salobrinho
     Salobrinho ---> BoosterRuaDoOuro
     Salobrinho ---> BoosterParqueUniversitario       
-    BoosterRuaDoOuro---> RuaDoOuro       
-    BoosterParqueUniversitario ---> ParqueUniversitario       
        
     
 ```
