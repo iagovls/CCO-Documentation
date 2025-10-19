@@ -2,7 +2,7 @@
 
 Abastecimento normalmente entre `04:00` e `12:00`
 
-Acionamento por temporizador in loco 
+Acionamento por temporizador localmente
 
 | Parâmetro     | Valor |
 | -------------    | ------------- |
