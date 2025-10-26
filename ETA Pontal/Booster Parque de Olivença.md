@@ -2,7 +2,7 @@
 
 Abastecimento normalmente entre `04:00` e `13:00`
 
-Acionamento por temporizador in loco 
+Acionamento por temporizador localmente
 
 | Parâmetro     | Valor |
 | -------------    | ------------- |
@@ -19,15 +19,18 @@ Pontos relacionados:
 
 ```mermaid
 flowchart LR
-    subgraph ETA["ETA Pontal"]
+    ETA["ETA Pontal"]
+    RADNSV[(RAD Nossa Senhora da Vitória 2000 m³)]
+
+    BoosterParqueDeOlivenca[/"Booster Parque de Olivença"\]
+    
+
+    ParqueDeOlivenca(["Condomínio Parque de Olivença"])
+    
+    ETA --> RADNSV
+    RADNSV --> BoosterParqueDeOlivenca
+    BoosterParqueDeOlivenca --> ParqueDeOlivenca
+    subgraph Loc105-Setor2 [Localidade 105 - Setor 2]
+      ParqueDeOlivenca
     end
-
-    subgraph B1["Booster Parque de Olivença"]
-    end    
-
-    subgraph Bairro["Rua Mata Atlântica"]
-    end
-
-    ETA --> B1
-    B1 --> Bairro
 ```
