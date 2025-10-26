@@ -29,7 +29,7 @@ click MarAVista "https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/k
  %% Litoral Norte
     ETA --> RADNSV
     RADNSV --> BoosterMarAVista
-    BoosterMarAVista --> Setor4
+    BoosterMarAVista --> MarAVista
 
     subgraph Setor4 [Setor 4]
       MarAVista
