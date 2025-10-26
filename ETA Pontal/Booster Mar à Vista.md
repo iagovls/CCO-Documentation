@@ -21,7 +21,7 @@ Pontos relacionados:
 ```mermaid
 flowchart LR
 ETA["ETA Pontal"]
-RADNSV[(RAD Nossa Senhora da Vitória)]
+RADNSV[(RAD Nossa Senhora da Vitória 2000 m³)]
 BoosterMarAVista[/"Booster Mar à Vista"\]
 MarAVista(["Condomínio Mar à Vista"])
 click MarAVista "https://www.vectorasys.com.br/vectorasys/?inc=jE9ciFZdkq5eiPI/kPRdHL0fUgHpk249UBIgVhQukPRdHPZ5kOC9GERdmLQ0WOUg"
