@@ -21,6 +21,7 @@ Pontos relacionados:
 ```mermaid
 flowchart LR
 ETA["ETA Pontal"]
+click ETA "https://github.com/iagovls/CCO-Documentation/blob/main/ETA%20Pontal/ETA%20Pontal.md"
 RADNSV[(RAD Nossa Senhora da Vitória 2000 m³)]
 BoosterMarAVista[/"Booster Mar à Vista"\]
 MarAVista(["Condomínio Mar à Vista"])
